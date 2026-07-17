@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "title": "Repro - Why Linear Recurrent Memory Works in PORL",
+  "emoji": "🎯",
+  "space_id": "DineshAI/ywjHJIkUgW",
+  "paper": {
+    "arxiv_id": "2605.31261",
+    "openreview_id": "ywjHJIkUgW"
+  },
+  "tags": [
+    "icml2026-repro",
+    "paper-ywjHJIkUgW"
+  ],
+  "updated_at": "2026-07-17T02:44:04+00:00",
+  "root": {
+    "slug": "index",
+    "title": "Repro - Why Linear Recurrent Memory Works in PORL",
+    "file": "pages/index.md",
+    "children": [
+      {
+        "slug": "claim-1-exact-belief-logit-reproduction",
+        "title": "Claim 1 — exact belief-logit reproduction",
+        "file": "pages/claim-1-exact-belief-logit-reproduction/page.md",
+        "children": []
+      },
+      {
+        "slug": "claim-2-vanishing-decoding-error",
+        "title": "Claim 2 — vanishing decoding error",
+        "file": "pages/claim-2-vanishing-decoding-error/page.md",
+        "children": []
+      },
+      {
+        "slug": "methods-environment",
+        "title": "Methods & environment",
+        "file": "pages/methods-environment/page.md",
+        "children": []
+      },
+      {
+        "slug": "negative-controls-falsification",
+        "title": "Negative controls & falsification",
+        "file": "pages/negative-controls-falsification/page.md",
+        "children": []
+      },
+      {
+        "slug": "conclusion",
+        "title": "Conclusion",
+        "file": "pages/conclusion/page.md",
+        "children": []
+      }
+    ]
+  },
+  "agent_view_tokens": 2438,
+  "revision": "1784256244361537609"
+}
