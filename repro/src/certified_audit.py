@@ -6,9 +6,9 @@ This suite is intentionally independent of the Monte Carlo reproduction:
 * Claims 2/3: evaluate the paper's Chernoff exponent directly from the
   likelihood model and certify the finite proof obligations that imply an
   epsilon*log(1/epsilon) upper bound.
-* Claim 4: quantitatively recover curves from the exact hashed arXiv rasters.
-  This verifies what the source artifact reports, but is not relabeled as an
-  independent PPO training reproduction.
+* Claim 4: test whether the exact hashed arXiv rasters permit quantitative
+  recovery.  The solid/dashed ambiguity is retained as a rejected method and
+  is not relabeled as an independent PPO training reproduction.
 """
 
 from __future__ import annotations
@@ -569,20 +569,19 @@ def run_certified_audit(repo_root: Path) -> dict[str, object]:
         },
         "final_mean_absolute_differences": digitizer_agreement,
         "independent_decoders_agree": digitizer_agreement_passed,
-        "source_artifact_subclaim_verdict": "VERIFIED",
+        "source_artifact_subclaim_verdict": "BLOCKED",
         "full_training_reproduction_verdict": "BLOCKED",
+        "method_status": "REJECTED",
         "limitation": (
-            "These independent pixel decoders quantitatively verify that the exact "
-            "arXiv source figures encode the two reported comparisons. They do not "
-            "rerun PPO and therefore cannot by themselves verify the full training claim."
+            "Same-color solid and dashed paths overlap in the raster. Two endpoint "
+            "directions and two color tolerances agree on final-return separation, "
+            "but cannot unambiguously recover the direct ALF-versus-LOF convergence "
+            "time. Raster forensics is therefore rejected as Claim 4 evidence. It "
+            "also does not rerun PPO."
         ),
     }
-    if not (
-        primary_digitization["passed"]
-        and independent_digitization["passed"]
-        and digitizer_agreement_passed
-    ):
-        raise AssertionError(f"source raster forensics failed: {figure_output}")
+    if not digitizer_agreement_passed:
+        raise AssertionError(f"source raster decoders disagree: {figure_output}")
 
     with (proof_dir / "proof_certificate.json").open("w") as handle:
         json.dump(proof_output, handle, indent=2, sort_keys=True)
@@ -636,9 +635,9 @@ def run_certified_audit(repo_root: Path) -> dict[str, object]:
     (figure_dir / "EVAL.md").write_text(
         "# Claim 4 source-raster forensics\n\n"
         "**BLOCKED**\n\n"
-        "Two independent decoders verify the comparisons encoded in the exact "
-        "hashed arXiv figures, but source-figure recovery is not an independent "
-        "PPO training reproduction.\n"
+        "The method is rejected. Same-color solid and dashed curves cannot be "
+        "unambiguously separated for convergence-time measurement, and raster "
+        "recovery is not an independent PPO training reproduction.\n"
     )
     runtime = {
         "runtime_seconds": time.perf_counter() - started,
@@ -665,7 +664,7 @@ def run_certified_audit(repo_root: Path) -> dict[str, object]:
         "proof_passed": proof_passed,
         "claim2_certificate_verdict": "VERIFIED",
         "claim3_theorem_certificate_verdict": "VERIFIED",
-        "claim4_source_artifact_subclaim_verdict": "VERIFIED",
+        "claim4_source_artifact_subclaim_verdict": "BLOCKED",
         "claim4_full_training_verdict": "BLOCKED",
         "claim2_xi": claim2["xi"],
         "claim2_kappa": claim2["kappa"],

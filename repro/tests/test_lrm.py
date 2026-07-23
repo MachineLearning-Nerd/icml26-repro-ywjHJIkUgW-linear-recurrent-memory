@@ -167,7 +167,9 @@ def test_bounded_counterexample_search_and_controls():
     assert proof_negative_controls()["passed"]
 
 
-def test_source_raster_decoder_fails_closed_and_passes_hashed_assets():
+def test_source_raster_decoder_is_rejected_for_ambiguous_convergence_time():
     repo_root = pathlib.Path(__file__).resolve().parents[2]
     result = digitize_source_figures(repo_root, tolerance=12.0)
-    assert result["passed"]
+    assert not result["passed"]
+    assert not result["checks"]["alf_reaches_0.4_before_lof"]
+    assert result["checks"]["deep_alf_final_mean_above_s5_hidden_12"]
