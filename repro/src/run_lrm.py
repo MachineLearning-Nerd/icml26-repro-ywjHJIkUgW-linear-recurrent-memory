@@ -19,6 +19,7 @@ from pathlib import Path
 import numpy as np
 from scipy.special import logsumexp
 from alf_two_state import run_claim2_5_evidence
+from action_controlled import run_claim3_evidence
 
 
 def gen_hmm(n, m, deterministic, eps=0.0, seed=0):
@@ -133,6 +134,8 @@ def main():
     repo_root = Path(__file__).resolve().parents[2]
     print("Running paper-faithful Claims 2/5 evidence suite")
     run_claim2_5_evidence(repo_root)
+    print("Running action-controlled Claim 3 evidence suite")
+    run_claim3_evidence(repo_root)
 
 
 if __name__ == "__main__":

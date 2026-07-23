@@ -12,6 +12,12 @@ from alf_two_state import (
     verify_claim5,
     wilson_interval,
 )
+from action_controlled import (
+    action_model,
+    exact_action_identity,
+    independent_action_checker,
+    permutation_certificate,
+)
 
 
 def test_deterministic_exact():
@@ -84,3 +90,22 @@ def test_claim5_verifier_fails_on_empty_evidence():
     except (IndexError, KeyError):
         return
     assert not result["all_passed"]
+
+
+def test_action_permutation_certificate():
+    permutations, _, emissions = action_model()
+    certificate = permutation_certificate(permutations)
+    assert certificate["passed"]
+    assert np.all(emissions > 0.0)
+    assert len({tuple(emissions[:, index]) for index in range(emissions.shape[1])}) == 8
+
+
+def test_action_arbitrary_initialization_identity():
+    result = exact_action_identity()
+    assert result["passed"]
+    assert result["maximum_absolute_logit_error"] < 1e-12
+    assert result["stochastic_action_negative_control_mismatch"] > 0.1
+
+
+def test_independent_action_index_checker():
+    assert independent_action_checker()["passed"]
