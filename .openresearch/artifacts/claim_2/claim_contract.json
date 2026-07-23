@@ -1,0 +1,21 @@
+{
+  "claim_id": 2,
+  "paper_statement": "Under Assumptions 5.3 and 5.6, ALF has vanishing long-term state-decoding error when delta_epsilon tends to zero and epsilon/delta_epsilon tends to zero. For delta_epsilon=lambda/log(1/epsilon), lambda in (0,xi), the limsup error is bounded by kappa epsilon log(1/epsilon)+o(epsilon log(1/epsilon)) and has the same dominated rate as the Bayes-optimal decoder.",
+  "source_anchor": "S5.Thmtheorem7",
+  "quantifiers": [
+    "all nearly-deterministic finite-state HMMs satisfying Definition 5.1 and Assumptions 5.3 and 5.6",
+    "limit epsilon -> 0",
+    "limsup k -> infinity"
+  ],
+  "required_checks": [
+    "implement ALF Equation 28, not a generic perturbed-transition filter",
+    "implement exact LOF/MAP as the Bayes-optimal comparator",
+    "check the paper's exact two-state model and lambda=0.7 schedule",
+    "report p/(epsilon log(1/epsilon))",
+    "use deterministic seeds and binomial confidence intervals",
+    "cross-check scalar and full-vector recurrences independently",
+    "reject a deliberately corrupted control"
+  ],
+  "verdict_rule": "Finite Monte Carlo evidence alone is BLOCKED for the universal asymptotic theorem. VERIFIED requires a proof-level checker covering the stated assumptions and limits; FALSIFIED requires a counterexample satisfying every assumption.",
+  "allowed_verdicts": ["VERIFIED", "FALSIFIED", "BLOCKED"]
+}
