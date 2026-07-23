@@ -6,6 +6,12 @@ import os, sys, pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent / "src"))
 import numpy as np
 from run_lrm import gen_hmm, log_forward, linear_filter, max_abs_diff, tv_mean
+from alf_two_state import (
+    adaptation_rates,
+    independent_recurrence_check,
+    verify_claim5,
+    wilson_interval,
+)
 
 
 def test_deterministic_exact():
@@ -43,3 +49,38 @@ def test_vanishing_error():
         Te, _, _, _ = gen_hmm(n, m, deterministic=False, eps=eps, seed=5)
         tvs.append(tv_mean(log_forward(Te, logE, logpi), linear_filter(Te, logE, logpi)))
     assert tvs[2] < tvs[0], f"error should shrink: {tvs}"
+
+
+def test_adaptation_rate_conditions():
+    """The two paper-valid choices meet delta->0 and epsilon/delta->0 numerically."""
+    eps = np.asarray([1e-4, 1e-8, 1e-12])
+    sqrt_delta = np.sqrt(eps)
+    log_delta = 0.7 / np.log(1.0 / eps)
+    assert np.all(np.diff(sqrt_delta) < 0)
+    assert np.all(np.diff(log_delta) < 0)
+    assert np.all(np.diff(eps / sqrt_delta) < 0)
+    assert np.all(np.diff(eps / log_delta) < 0)
+    rates = adaptation_rates(0.005)
+    assert np.allclose(
+        rates,
+        [np.sqrt(0.005), 0.7 / np.log(200.0), 0.005**2, 0.0, 1.0],
+    )
+
+
+def test_wilson_interval_contains_estimate():
+    low, high = wilson_interval(23, 200)
+    assert low < 23 / 200 < high
+
+
+def test_independent_full_vector_checker():
+    result = independent_recurrence_check(seed=271828)
+    assert result["passed"]
+
+
+def test_claim5_verifier_fails_on_empty_evidence():
+    """Verifiers fail closed; skipped or absent raw data cannot become a PASS."""
+    try:
+        result = verify_claim5([])
+    except (IndexError, KeyError):
+        return
+    assert not result["all_passed"]

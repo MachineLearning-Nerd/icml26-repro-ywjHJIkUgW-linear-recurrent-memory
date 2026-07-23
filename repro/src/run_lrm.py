@@ -15,8 +15,10 @@ We verify by computing the belief logits TWO independent ways and comparing:
 and a negative control: for a STOCHASTIC (non-deterministic) T they must MISMATCH.
 """
 import os, json
+from pathlib import Path
 import numpy as np
 from scipy.special import logsumexp
+from alf_two_state import run_claim2_5_evidence
 
 
 def gen_hmm(n, m, deterministic, eps=0.0, seed=0):
@@ -128,6 +130,9 @@ def main():
     print(f"    -> error vanishes as eps->0: {c2_vanishes} (final TV={tv_by_eps[-1]:.4f})")
     print("=" * 64)
     print("wrote", out)
+    repo_root = Path(__file__).resolve().parents[2]
+    print("Running paper-faithful Claims 2/5 evidence suite")
+    run_claim2_5_evidence(repo_root)
 
 
 if __name__ == "__main__":

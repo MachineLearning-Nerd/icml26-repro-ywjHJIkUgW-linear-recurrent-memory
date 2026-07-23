@@ -1,0 +1,23 @@
+{
+  "claim_id": 5,
+  "paper_statement": "For the Section 6.1 two-state HMM, the valid schedules sqrt(epsilon) and 0.7/log(1/epsilon) yield decreasing p_1000 as epsilon decreases, with the logarithmic schedule performing better; the invalid schedules epsilon^2, 0, and 1 do not converge.",
+  "source_anchor": "S6.SS1",
+  "finite_protocol": {
+    "transition": [[ "epsilon", "1-epsilon" ], [ "1-epsilon", "epsilon" ]],
+    "emission": [[0.9, 0.1], [0.1, 0.9]],
+    "inverse_epsilon_grid": "23 values uniformly spaced on [30,250]",
+    "monte_carlo_trajectories_per_point": 20000,
+    "time_step": 1000,
+    "initial_state_distribution": [1, 0],
+    "initial_alf_and_lof_logits": [0, 0]
+  },
+  "predeclared_acceptance": [
+    "both valid schedules have non-overlapping endpoint decreases",
+    "each invalid schedule is separated from both valid schedules at inverse epsilon 250",
+    "the logarithmic valid schedule has lower mean error",
+    "the logarithmic schedule is better at at least 18 of 23 points",
+    "an independent full-vector recurrence agrees with scalar odds to 2e-13",
+    "a valid/invalid label-swap negative control is rejected"
+  ],
+  "allowed_verdicts": ["VERIFIED", "FALSIFIED", "BLOCKED"]
+}
