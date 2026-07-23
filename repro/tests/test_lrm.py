@@ -18,6 +18,7 @@ from action_controlled import (
     independent_action_checker,
     permutation_certificate,
 )
+from claim4_blocker import evaluate_claim4, reject_proxy_as_full_evidence, resource_contract
 
 
 def test_deterministic_exact():
@@ -109,3 +110,21 @@ def test_action_arbitrary_initialization_identity():
 
 def test_independent_action_index_checker():
     assert independent_action_checker()["passed"]
+
+
+def test_claim4_resource_lower_bound():
+    resources = resource_contract()
+    assert resources["figure3_training_runs"] == 56
+    assert resources["figure3_environment_steps"] == 1_680_000_000
+    assert resources["figure3_sample_epoch_passes_lower_bound"] == 50_400_000_000
+    assert resources["minimum_training_runs"] == 32
+
+
+def test_claim4_proxy_is_rejected():
+    assert reject_proxy_as_full_evidence()["verifier_rejected"]
+
+
+def test_claim4_dossier_is_blocked_not_pass(tmp_path):
+    result = evaluate_claim4(tmp_path)
+    assert result["claim4_verdict"] == "BLOCKED"
+    assert result["blocker_dossier_valid"]

@@ -20,6 +20,7 @@ import numpy as np
 from scipy.special import logsumexp
 from alf_two_state import run_claim2_5_evidence
 from action_controlled import run_claim3_evidence
+from claim4_blocker import run_claim4_evidence
 
 
 def gen_hmm(n, m, deterministic, eps=0.0, seed=0):
@@ -136,6 +137,8 @@ def main():
     run_claim2_5_evidence(repo_root)
     print("Running action-controlled Claim 3 evidence suite")
     run_claim3_evidence(repo_root)
+    print("Running full-scale RingWorld Claim 4 blocker audit")
+    run_claim4_evidence(repo_root)
 
 
 if __name__ == "__main__":
