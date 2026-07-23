@@ -1,0 +1,6 @@
+{
+  "path_a": "scipy.special.logsumexp general HMM forward recursion",
+  "path_b": "matrix-vector linear logit recurrence",
+  "maximum_absolute_difference": 0.0,
+  "passed": true
+}

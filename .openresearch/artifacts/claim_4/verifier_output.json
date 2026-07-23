@@ -1,0 +1,82 @@
+{
+  "blocker_dossier_valid": true,
+  "blockers": {
+    "direct_training_implementation_absent": true,
+    "full_cpu_training_not_executed": true,
+    "pinned_autodiff_stack_absent": true,
+    "protocol_not_uniquely_specified": true,
+    "raw_numeric_paper_curves_absent": true
+  },
+  "claim4_verdict": "BLOCKED",
+  "prohibited_interpretation": "No environment-only, shortened, single-seed, non-PPO, non-S5, or digitized-paper-curve result is accepted as verification.",
+  "proxy_negative_control": {
+    "accepted_as_full_claim_evidence": false,
+    "control": {
+      "has_deep_alf": false,
+      "has_ppo": false,
+      "has_s5_equal_hidden_size": false,
+      "observations": 4,
+      "states": 12,
+      "trained_seeds": 0,
+      "trained_timesteps": 0
+    },
+    "verifier_rejected": true
+  },
+  "resource_contract": {
+    "collected_steps_per_run_if_batches_are_complete": 30015488,
+    "figure3_environment_steps": 1680000000,
+    "figure3_sample_epoch_passes_lower_bound": 50400000000,
+    "figure3_sample_epoch_passes_with_complete_batches": 50426019840,
+    "figure3_training_runs": 56,
+    "figure3_variants": [
+      "S5 hidden size 256",
+      "S5 hidden size 12",
+      "LOF direct",
+      "LOF softmax",
+      "ALF direct delta=0.1",
+      "ALF softmax delta=0.1",
+      "Deep ALF"
+    ],
+    "independent_arithmetic_consistent": true,
+    "minimum_claim_variants": [
+      "LOF direct",
+      "ALF direct delta=0.1",
+      "S5 hidden size 12",
+      "Deep ALF"
+    ],
+    "minimum_environment_steps": 960000000,
+    "minimum_training_runs": 32,
+    "updates_per_run_if_batches_are_complete": 458
+  },
+  "source_and_environment_audit": {
+    "adjacent_code_is_direct_paper_code": false,
+    "adjacent_s5_code": "https://github.com/luchris429/s5rl",
+    "all_required_autodiff_modules_available": false,
+    "arxiv_eprint_retrieved_utc": "2026-07-23T07:15:00Z",
+    "arxiv_eprint_sha256": "f85693bad9adf7d13c2ae827178bbb052f54b7460dcfd0261802f9bf6eac214c",
+    "arxiv_eprint_url": "https://export.arxiv.org/e-print/2605.31261",
+    "author_publication_page": "https://onnoeberhard.com/publications",
+    "author_publication_page_retrieved_utc": "2026-07-23T07:19:43Z",
+    "author_publication_page_sha256": "7b10cc8790d1f3e78647d6ddf311b3d1055ae9e3252e3d92b3c64735114475f1",
+    "candidate_training_files_in_reproduction": [],
+    "full_training_implementation_present": false,
+    "missing_protocol_fields": {
+      "beacon_angles_xi_i": "not numerically specified; shown only in figures",
+      "direct_paper_implementation": "no code link in the paper or its author publication entry; exact-title GitHub repository search returned zero repositories on 2026-07-23",
+      "eight_random_seeds": "count is reported but seed values are not",
+      "episode_length_K": "not numerically specified",
+      "numeric_learning_curves": "raster figures only; no raw returns or checkpoints",
+      "three_action_transition_entries": "only CW1 is written explicitly; CW2/CCW1/CCW2 are described but their Q(a) entries are not tabulated"
+    },
+    "paper_html_retrieved_utc": "2026-07-23T06:09:31Z",
+    "paper_html_sha256": "e6ed4e6be5e80ab9f65eac02be852add36872fc660fa780cfcf1e68ac0f94250",
+    "paper_source": "https://ar5iv.labs.arxiv.org/html/2605.31261",
+    "required_autodiff_modules_available": {
+      "distrax": false,
+      "flax": false,
+      "gymnax": false,
+      "jax": false,
+      "optax": false
+    }
+  }
+}

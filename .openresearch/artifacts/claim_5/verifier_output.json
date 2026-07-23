@@ -1,0 +1,114 @@
+{
+  "all_passed": true,
+  "checks": {
+    "alf_0.7_over_log_endpoint_drop_with_nonoverlap": true,
+    "alf_delta_one_separated_from_valid_at_smallest_epsilon": true,
+    "alf_delta_zero_separated_from_valid_at_smallest_epsilon": true,
+    "alf_epsilon_squared_separated_from_valid_at_smallest_epsilon": true,
+    "alf_sqrt_epsilon_endpoint_drop_with_nonoverlap": true,
+    "all_six_decoders_present": true,
+    "exact_23_point_grid": true,
+    "log_rate_better_on_at_least_18_of_23_points": true,
+    "log_rate_lower_mean_error_than_sqrt_rate": true,
+    "paper_trajectory_count_per_replicate": true
+  },
+  "contract": "Section 6.1 finite Monte Carlo reproduction",
+  "endpoint": {
+    "alf_0.7_over_log": {
+      "inv_epsilon_250": {
+        "errors": 1395.0,
+        "high": 0.01836798244288343,
+        "low": 0.016553358931189602,
+        "p": 0.0174375,
+        "total": 80000.0
+      },
+      "inv_epsilon_30": {
+        "errors": 5684.0,
+        "high": 0.07285092412141396,
+        "low": 0.06929026874460574,
+        "p": 0.07105,
+        "total": 80000.0
+      }
+    },
+    "alf_delta_one": {
+      "inv_epsilon_250": {
+        "errors": 7964.0,
+        "high": 0.10164395878636186,
+        "low": 0.0974944971716696,
+        "p": 0.09955,
+        "total": 80000.0
+      },
+      "inv_epsilon_30": {
+        "errors": 7942.0,
+        "high": 0.10136642105282115,
+        "low": 0.0972220613139716,
+        "p": 0.099275,
+        "total": 80000.0
+      }
+    },
+    "alf_delta_zero": {
+      "inv_epsilon_250": {
+        "errors": 40026.0,
+        "high": 0.5037896600409951,
+        "low": 0.4968603087486506,
+        "p": 0.500325,
+        "total": 80000.0
+      },
+      "inv_epsilon_30": {
+        "errors": 40051.0,
+        "high": 0.5041021429518967,
+        "low": 0.497172795827793,
+        "p": 0.5006375,
+        "total": 80000.0
+      }
+    },
+    "alf_epsilon_squared": {
+      "inv_epsilon_250": {
+        "errors": 31832.0,
+        "high": 0.40129657881155584,
+        "low": 0.3945132260412722,
+        "p": 0.3979,
+        "total": 80000.0
+      },
+      "inv_epsilon_30": {
+        "errors": 35975.0,
+        "high": 0.45313700779759314,
+        "low": 0.44624282380532476,
+        "p": 0.4496875,
+        "total": 80000.0
+      }
+    },
+    "alf_sqrt_epsilon": {
+      "inv_epsilon_250": {
+        "errors": 2977.0,
+        "high": 0.03854651213672255,
+        "low": 0.035922930207334065,
+        "p": 0.0372125,
+        "total": 80000.0
+      },
+      "inv_epsilon_30": {
+        "errors": 6529.0,
+        "high": 0.0835297684144981,
+        "low": 0.0797354101150084,
+        "p": 0.0816125,
+        "total": 80000.0
+      }
+    },
+    "lof_bayes_optimal": {
+      "inv_epsilon_250": {
+        "errors": 893.0,
+        "high": 0.011914357802470995,
+        "low": 0.010457586171518747,
+        "p": 0.0111625,
+        "total": 80000.0
+      },
+      "inv_epsilon_30": {
+        "errors": 4091.0,
+        "high": 0.052685589595004,
+        "low": 0.049632515505412735,
+        "p": 0.0511375,
+        "total": 80000.0
+      }
+    }
+  }
+}

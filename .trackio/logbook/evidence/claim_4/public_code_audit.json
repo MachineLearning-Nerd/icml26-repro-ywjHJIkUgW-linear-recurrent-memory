@@ -1,0 +1,21 @@
+{
+  "audit_date_utc": "2026-07-23",
+  "github_repository_search": {
+    "query": "\"Why Linear Recurrent Memory Works in Partially Observable Reinforcement Learning\"",
+    "total_count": 0
+  },
+  "github_code_searches": [
+    {
+      "query": "\"RingWorld\" \"Deep ALF\"",
+      "relevant_implementation_results": 0
+    },
+    {
+      "query": "\"Deep ALF\" \"S5\"",
+      "relevant_implementation_results": 0,
+      "irrelevant_results": 1
+    }
+  ],
+  "author_publication_page_has_code_link_for_this_paper": false,
+  "adjacent_s5_repository": "https://github.com/luchris429/s5rl",
+  "adjacent_repository_contains_this_papers_ringworld_or_deep_alf": false
+}

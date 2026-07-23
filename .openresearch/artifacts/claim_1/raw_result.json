@@ -1,0 +1,12 @@
+{
+  "run_id": "c996213b-23f1-45b5-a28e-cb34752d8e26",
+  "git_sha": "6890302b44515b8ac224a51c1e59feaa21d7f6df",
+  "seed": 0,
+  "states": 8,
+  "observations": 12,
+  "steps": 40,
+  "deterministic_max_abs_logit_difference": 0.0,
+  "stochastic_negative_control_max_abs_logit_difference": 14.814854322993483,
+  "tests_passed": 3,
+  "tests_total": 3
+}

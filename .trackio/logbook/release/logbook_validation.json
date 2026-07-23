@@ -1,0 +1,41 @@
+{
+  "candidate_logbook_valid": true,
+  "claim_checks": {
+    "claim_1": {
+      "contract_json_valid": true,
+      "expected_verdict": "VERIFIED",
+      "verifier_json_valid": true
+    },
+    "claim_2": {
+      "contract_json_valid": true,
+      "expected_verdict": "BLOCKED",
+      "verifier_json_valid": true
+    },
+    "claim_3": {
+      "contract_json_valid": true,
+      "expected_verdict": "BLOCKED",
+      "verifier_json_valid": true
+    },
+    "claim_4": {
+      "contract_json_valid": true,
+      "expected_verdict": "BLOCKED",
+      "verifier_json_valid": true
+    },
+    "claim_5": {
+      "contract_json_valid": true,
+      "expected_verdict": "VERIFIED",
+      "verifier_json_valid": true
+    }
+  },
+  "historical_file_count_checked": 14,
+  "historical_files_hash_identical": true,
+  "historical_slugs_reachable": [
+    "claim-1-exact-belief-logit-reproduction",
+    "claim-2-vanishing-decoding-error",
+    "conclusion",
+    "methods-environment",
+    "negative-controls-falsification"
+  ],
+  "logbook_page_count": 12,
+  "space_id": "DineshAI/ywjHJIkUgW"
+}

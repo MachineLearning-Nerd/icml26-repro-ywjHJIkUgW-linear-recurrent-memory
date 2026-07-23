@@ -1,0 +1,6 @@
+{
+  "control": "replace the permutation transition with a fully stochastic column-stochastic matrix",
+  "maximum_absolute_difference": 14.814854322993483,
+  "required_minimum_difference": 1.0,
+  "exact_identity_rejected": true
+}

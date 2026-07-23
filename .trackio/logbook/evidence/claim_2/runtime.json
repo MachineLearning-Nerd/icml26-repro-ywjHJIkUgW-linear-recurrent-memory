@@ -1,0 +1,24 @@
+{
+  "checkpoints": [
+    900,
+    950,
+    1000
+  ],
+  "cpu_count": 8,
+  "git_sha": "645adba1c1aae3bc4558b47fbcbb8bdaef37ef44",
+  "paper_retrieved_utc": "2026-07-23T06:09:31Z",
+  "paper_sha256": "e6ed4e6be5e80ab9f65eac02be852add36872fc660fa780cfcf1e68ac0f94250",
+  "paper_url": "https://ar5iv.labs.arxiv.org/html/2605.31261",
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "processor": "arm",
+  "python": "3.12.11",
+  "runtime_seconds": 153.99764912499813,
+  "seeds": [
+    20260723,
+    20260724,
+    20260725,
+    20260726
+  ],
+  "steps": 1000,
+  "trajectories_per_epsilon_per_replicate": 20000
+}

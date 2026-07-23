@@ -1,0 +1,37 @@
+{
+  "alf_normalized_error_tail": [
+    0.7825021691261326,
+    0.7794418214506164,
+    0.8365863524871984,
+    0.8198357663122952,
+    0.8596255414661702,
+    0.8035925465135064,
+    0.8112192870551145,
+    0.78953289081467
+  ],
+  "alf_tail_normalized_max": 0.8596255414661702,
+  "all_empirical_checks_passed": true,
+  "checks": {
+    "alf_endpoint_drop_with_nonoverlap": true,
+    "alf_implemented_from_equation_28": true,
+    "bayes_optimal_lof_included": true,
+    "delta_tends_to_zero_analytically": true,
+    "epsilon_over_delta_tends_to_zero_analytically": true,
+    "lof_no_worse_than_alf_in_aggregate": true,
+    "tail_normalized_alf_error_finite": true,
+    "tail_normalized_lof_error_finite": true
+  },
+  "limitation": "The 23-point, k=1000 Monte Carlo sweep cannot establish epsilon->0 or k->infinity. The paper's kappa=-q_min*alpha/lambda also contains an existential sufficiently-large alpha rather than a uniquely specified numerical constant for a finite bound check.",
+  "lof_normalized_error_tail": [
+    0.5060700628678421,
+    0.5074066677387579,
+    0.5383784704951456,
+    0.5463935376680146,
+    0.5328046802088658,
+    0.5138762863231107,
+    0.5227492706731676,
+    0.5054142448010754
+  ],
+  "lof_tail_normalized_max": 0.5463935376680146,
+  "scope": "finite Section 6.1 evidence; not a proof of Theorem 5.7 quantifiers"
+}

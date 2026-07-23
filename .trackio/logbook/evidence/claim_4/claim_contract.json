@@ -1,0 +1,25 @@
+{
+  "claim_id": 4,
+  "paper_statement": "In the 12-position, 4-beacon RingWorld PPO experiment, direct ALF converges faster than direct LOF, and fully learned Deep ALF outperforms S5 at equal hidden size 12; S5 hidden size 256 approaches Deep ALF.",
+  "source_anchors": ["S6.SS2", "A5.SS2.SSS1", "A5.SS2.SSS2"],
+  "minimum_full_credit_protocol": {
+    "environment": "paper-exact 12-state RingWorld with all four action transitions, beacon angles, rewards, resets, and episode length",
+    "optimizer": "PPO with every Table 1 hyperparameter",
+    "timesteps_per_training": 30000000,
+    "seeds": 8,
+    "required_models": ["direct ALF", "direct LOF", "fully-random Deep ALF hidden 12", "S5 hidden 12"],
+    "equal_hidden_size": 12,
+    "uncertainty": "seed-level raw curves and confidence or standard-deviation summaries",
+    "negative_controls": ["softmax LOF stability", "S5 hidden 256 capacity control"]
+  },
+  "invalid_substitutions": [
+    "environment-only checks",
+    "shortened or single-seed training",
+    "non-PPO policy optimization",
+    "generic RNN in place of S5",
+    "digitizing the paper's own plots",
+    "qualitative videos or selected episodes"
+  ],
+  "verdict_rule": "VERIFIED or FALSIFIED requires full protocol training from a uniquely specified implementation. Otherwise the result is BLOCKED.",
+  "allowed_verdicts": ["VERIFIED", "FALSIFIED", "BLOCKED"]
+}

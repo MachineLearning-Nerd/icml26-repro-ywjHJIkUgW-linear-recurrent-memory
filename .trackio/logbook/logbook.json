@@ -11,12 +11,48 @@
     "icml2026-repro",
     "paper-ywjHJIkUgW"
   ],
-  "updated_at": "2026-07-17T02:44:04+00:00",
+  "updated_at": "2026-07-23T08:00:00+00:00",
   "root": {
     "slug": "index",
     "title": "Repro - Why Linear Recurrent Memory Works in PORL",
     "file": "pages/index.md",
     "children": [
+      {
+        "slug": "campaign-release-summary",
+        "title": "Cumulative campaign — current verdicts",
+        "file": "pages/campaign-release-summary/page.md",
+        "children": []
+      },
+      {
+        "slug": "claim-2-alf-rate-audit",
+        "title": "Claim 2 — ALF asymptotic-rate audit",
+        "file": "pages/claim-2-alf-rate-audit/page.md",
+        "children": []
+      },
+      {
+        "slug": "claim-3-action-controlled",
+        "title": "Claim 3 — action-controlled extension",
+        "file": "pages/claim-3-action-controlled/page.md",
+        "children": []
+      },
+      {
+        "slug": "claim-4-ringworld",
+        "title": "Claim 4 — RingWorld learning-curve audit",
+        "file": "pages/claim-4-ringworld/page.md",
+        "children": []
+      },
+      {
+        "slug": "claim-5-two-state-hmm",
+        "title": "Claim 5 — two-state HMM schedules",
+        "file": "pages/claim-5-two-state-hmm/page.md",
+        "children": []
+      },
+      {
+        "slug": "evidence-manifest",
+        "title": "Evidence, provenance, and reproducibility",
+        "file": "pages/evidence-manifest/page.md",
+        "children": []
+      },
       {
         "slug": "claim-1-exact-belief-logit-reproduction",
         "title": "Claim 1 — exact belief-logit reproduction",
@@ -50,5 +86,5 @@
     ]
   },
   "agent_view_tokens": 2438,
-  "revision": "1784256244361537609"
+  "revision": "2026072308000000000"
 }

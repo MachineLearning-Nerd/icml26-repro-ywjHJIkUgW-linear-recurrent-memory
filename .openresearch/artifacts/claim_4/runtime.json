@@ -1,0 +1,10 @@
+{
+  "cpu_count": 8,
+  "git_sha": "645adba1c1aae3bc4558b47fbcbb8bdaef37ef44",
+  "local_or_hf_training_cost_usd": 0,
+  "local_or_hf_training_runtime_seconds": 0,
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "processor": "arm",
+  "python": "3.12.11",
+  "reason": "No uniquely specified and runnable faithful training workload exists."
+}

@@ -1,0 +1,14 @@
+{
+  "claim_id": 1,
+  "paper_statement": "Under deterministic transition matrices, a linear recurrent filter can exactly reproduce the optimal pre-softmax belief logits.",
+  "source_anchor": "S4.Thmtheorem4",
+  "acceptance": [
+    "column-stochastic permutation transition",
+    "general scipy log-sum-exp forward recursion",
+    "independent linear logit recurrence",
+    "maximum absolute discrepancy below 1e-10",
+    "fully stochastic transition negative control mismatches above 1.0"
+  ],
+  "verdict_rule": "VERIFIED only when the exact identity and negative control both pass.",
+  "allowed_verdicts": ["VERIFIED", "FALSIFIED", "BLOCKED"]
+}

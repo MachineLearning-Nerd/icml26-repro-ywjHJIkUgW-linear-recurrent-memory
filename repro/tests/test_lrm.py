@@ -19,6 +19,7 @@ from action_controlled import (
     permutation_certificate,
 )
 from claim4_blocker import evaluate_claim4, reject_proxy_as_full_evidence, resource_contract
+from release_checks import validate_release_candidate
 
 
 def test_deterministic_exact():
@@ -128,3 +129,11 @@ def test_claim4_dossier_is_blocked_not_pass(tmp_path):
     result = evaluate_claim4(tmp_path)
     assert result["claim4_verdict"] == "BLOCKED"
     assert result["blocker_dossier_valid"]
+
+
+def test_release_candidate_is_fail_closed():
+    repo_root = pathlib.Path(__file__).resolve().parents[2]
+    result = validate_release_candidate(repo_root)
+    assert result["candidate_logbook_valid"]
+    assert result["historical_files_hash_identical"]
+    assert result["claim_checks"]["claim_2"]["expected_verdict"] == "BLOCKED"

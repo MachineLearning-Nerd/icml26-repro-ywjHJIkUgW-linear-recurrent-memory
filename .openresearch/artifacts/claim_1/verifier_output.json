@@ -1,0 +1,10 @@
+{
+  "checks": {
+    "deterministic_exact_below_1e-10": true,
+    "stochastic_control_above_1": true,
+    "independent_code_paths_present": true,
+    "tests_pass": true
+  },
+  "all_passed": true,
+  "verdict": "VERIFIED"
+}

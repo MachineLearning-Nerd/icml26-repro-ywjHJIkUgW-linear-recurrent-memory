@@ -1,0 +1,9 @@
+{
+  "max_abs_alf_logit_difference_error": 2.6645352591003757e-15,
+  "max_abs_lof_logit_difference_error": 3.108624468950438e-14,
+  "passed": true,
+  "path_sha256": "939b7b1e50e00eaf0e1e4a7d9b6783fedcda2100d7938eb5088032c372540a7f",
+  "seed": 314159,
+  "steps": 73,
+  "trajectories": 257
+}

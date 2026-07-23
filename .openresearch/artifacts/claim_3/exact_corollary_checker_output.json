@@ -1,0 +1,18 @@
+{
+  "arbitrary_initialization_sha256": "6bb25118f5093d7b5213f2765658bcde5f93c564d36ffcea110bd224d498800f",
+  "horizon": 127,
+  "maximum_absolute_logit_error": 5.684341886080802e-14,
+  "passed": true,
+  "random_trials": 64,
+  "source_result": "Corollary 4.5",
+  "stochastic_action_negative_control_mismatch": 86.2514838846667,
+  "structural_certificate": {
+    "actions": 4,
+    "all_entries_binary": true,
+    "one_nonzero_per_column": true,
+    "one_nonzero_per_row": true,
+    "passed": true,
+    "proof_obligation": "For each row i there is exactly one predecessor j with log P_ij=0; all other terms are -infinity. Therefore logsumexp_j(log P_ij+l_j)=l_j=(P l)_i for every finite real l. Induction over an arbitrary action sequence proves the recurrence.",
+    "states": 8
+  }
+}

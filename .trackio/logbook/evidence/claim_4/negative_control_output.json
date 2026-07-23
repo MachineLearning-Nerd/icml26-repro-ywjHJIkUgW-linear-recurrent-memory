@@ -1,0 +1,13 @@
+{
+  "accepted_as_full_claim_evidence": false,
+  "control": {
+    "has_deep_alf": false,
+    "has_ppo": false,
+    "has_s5_equal_hidden_size": false,
+    "observations": 4,
+    "states": 12,
+    "trained_seeds": 0,
+    "trained_timesteps": 0
+  },
+  "verifier_rejected": true
+}

@@ -1,0 +1,26 @@
+{
+  "claim_id": 3,
+  "paper_statements": {
+    "corollary_4_5": "If T(a)=P(a) for every action, optimal logits can be reproduced by an action-dependent linear recurrence initialized at an arbitrary finite vector.",
+    "theorem_5_9": "For T(a)=P(a)+epsilon Q(a), under Assumption 5.8, the results of Theorem 5.7 hold for the time-varying ALF in Equation 65."
+  },
+  "source_anchors": ["S4.Thmtheorem5", "S5.E64", "S5.E65", "S5.Thmtheorem8", "S5.Thmtheorem9"],
+  "exact_corollary_acceptance": [
+    "at least four genuinely different action-dependent permutation matrices",
+    "structural certificate of exactly one unit entry per row and column",
+    "explicit first-step correction for arbitrary initialization",
+    "general action-conditioned log-sum-exp and linear paths agree within 1e-12",
+    "a non-permutation action produces mismatch above 0.1"
+  ],
+  "near_permutation_acceptance": [
+    "T(a)=(1-epsilon)P(a)+epsilon U is column stochastic for every action",
+    "all emissions are positive and no columns are identical",
+    "all actions are exercised and supplied to ALF and LOF",
+    "23 inverse-epsilon values, 20,000 trajectories, and k=1000",
+    "valid sqrt(epsilon) ALF decreases with confidence separation",
+    "epsilon-squared and wrong-action controls are separated",
+    "exact Bayes LOF is included"
+  ],
+  "overall_verdict_rule": "The combined claim is VERIFIED only if both the exact corollary and universal asymptotic theorem are established. Finite Monte Carlo evidence cannot establish Theorem 5.9's inherited double limits.",
+  "allowed_verdicts": ["VERIFIED", "FALSIFIED", "BLOCKED"]
+}

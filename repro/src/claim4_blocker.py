@@ -92,16 +92,16 @@ def released_protocol_audit(repo_root: Path) -> dict[str, object]:
             "GitHub repository search returned zero repositories on 2026-07-23"
         ),
     }
+    reproduction_dir = repo_root / "repro"
     candidate_training_files = [
         str(path.relative_to(repo_root))
-        for path in repo_root.rglob("*")
+        for path in reproduction_dir.rglob("*")
         if path.is_file()
         and (
             "ringworld" in path.name.lower()
             or "ppo" in path.name.lower()
             or "deep_alf" in path.name.lower()
         )
-        and ".git" not in path.parts
     ]
     return {
         "paper_source": PAPER_URL,
@@ -253,4 +253,3 @@ def run_claim4_evidence(repo_root: Path) -> dict[str, object]:
     )
     print("ORX_EVIDENCE_C4=" + json.dumps(result, sort_keys=True))
     return result
-
