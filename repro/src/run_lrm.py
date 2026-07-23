@@ -22,6 +22,7 @@ from alf_two_state import run_claim2_5_evidence
 from action_controlled import run_claim3_evidence
 from claim4_blocker import run_claim4_evidence
 from release_checks import validate_release_candidate
+from certified_audit import run_certified_audit
 
 
 def gen_hmm(n, m, deterministic, eps=0.0, seed=0):
@@ -142,6 +143,8 @@ def main():
     run_claim4_evidence(repo_root)
     print("Validating cumulative logbook release candidate")
     validate_release_candidate(repo_root)
+    print("Running certified theorem and source-raster audit")
+    run_certified_audit(repo_root)
 
 
 if __name__ == "__main__":

@@ -20,6 +20,13 @@ from action_controlled import (
 )
 from claim4_blocker import evaluate_claim4, reject_proxy_as_full_evidence, resource_contract
 from release_checks import validate_release_candidate
+from certified_audit import (
+    action_filter_certificate,
+    bounded_counterexample_search,
+    digitize_source_figures,
+    fixed_filter_certificate,
+    proof_negative_controls,
+)
 
 
 def test_deterministic_exact():
@@ -137,3 +144,30 @@ def test_release_candidate_is_fail_closed():
     assert result["candidate_logbook_valid"]
     assert result["historical_files_hash_identical"]
     assert result["claim_checks"]["claim_2"]["expected_verdict"] == "BLOCKED"
+
+
+def test_exact_two_state_chernoff_certificate():
+    emissions = np.asarray([[0.9, 0.1], [0.1, 0.9]])
+    swap = np.asarray([[0.0, 1.0], [1.0, 0.0]])
+    result = fixed_filter_certificate(swap, emissions, q_rate=1.0)
+    assert result["passed"]
+    assert abs(result["xi"] - 0.7206014018371382) < 1e-10
+    assert 0.0 < result["lambda"] < result["xi"]
+
+
+def test_action_certificate_is_uniform():
+    permutations, _, emissions = action_model()
+    result = action_filter_certificate(permutations, emissions, q_rate=0.875)
+    assert result["passed"]
+    assert result["all_actions_preserve_pair_separation"]
+
+
+def test_bounded_counterexample_search_and_controls():
+    assert bounded_counterexample_search()["passed"]
+    assert proof_negative_controls()["passed"]
+
+
+def test_source_raster_decoder_fails_closed_and_passes_hashed_assets():
+    repo_root = pathlib.Path(__file__).resolve().parents[2]
+    result = digitize_source_figures(repo_root, tolerance=12.0)
+    assert result["passed"]
