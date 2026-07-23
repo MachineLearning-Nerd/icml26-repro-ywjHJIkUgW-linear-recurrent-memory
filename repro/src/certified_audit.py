@@ -378,12 +378,16 @@ def _track_curve(
     *,
     initial_y: float,
     preference: str,
+    reverse: bool = False,
 ) -> tuple[np.ndarray, np.ndarray]:
     """Track a colored curve using continuity and deterministic branch preference."""
     xs = []
     ys = []
     previous = initial_y
-    for index, values in enumerate(candidates):
+    indexed_candidates = list(enumerate(candidates))
+    if reverse:
+        indexed_candidates.reverse()
+    for index, values in indexed_candidates:
         x = X_LEFT + index
         if len(values) == 0:
             continue
@@ -436,23 +440,27 @@ def digitize_source_figures(repo_root: Path, tolerance: float) -> dict[str, obje
 
     alf_x, alf_y = _track_curve(
         _color_candidates(image3, PALETTE["orange"], tolerance),
-        initial_y=835.0,
-        preference="upper",
+        initial_y=105.0,
+        preference="lower",
+        reverse=True,
     )
     lof_x, lof_y = _track_curve(
         _color_candidates(image3, PALETTE["blue"], tolerance),
-        initial_y=845.0,
+        initial_y=251.0,
         preference="lower",
+        reverse=True,
     )
     s5_x, s5_y = _track_curve(
         _color_candidates(image_deep, PALETTE["brown"], tolerance),
-        initial_y=840.0,
+        initial_y=187.0,
         preference="lower",
+        reverse=True,
     )
     deep_x, deep_y = _track_curve(
         _color_candidates(image_deep, PALETTE["gray"], tolerance),
-        initial_y=845.0,
-        preference="upper",
+        initial_y=145.0,
+        preference="lower",
+        reverse=True,
     )
     summaries = {
         "alf_direct": _summarize_curve(alf_x, alf_y),
