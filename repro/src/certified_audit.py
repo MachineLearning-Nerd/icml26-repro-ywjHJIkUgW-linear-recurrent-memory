@@ -259,8 +259,11 @@ def independent_xi_checker(certificate: dict[str, object], emissions: np.ndarray
     kl = float(np.sum(p * np.log(p / q)))
     grid = np.concatenate((grid, [0.0]))
     values = np.concatenate((values, [kl]))
-    one_integral = float(np.trapezoid(values, grid))
-    xi_dense = -one_integral * order_factor / order
+    # The dense grid integrates from the negative lower endpoint up to zero,
+    # while Appendix D writes the integral from zero down to that endpoint.
+    # Reversing the limits cancels the leading minus in xi's definition.
+    one_integral_lower_to_zero = float(np.trapezoid(values, grid))
+    xi_dense = one_integral_lower_to_zero * order_factor / order
     error = abs(xi_dense - float(certificate["xi"]))
     return {
         "method": "200001-point independent trapezoid integration",
