@@ -18,3 +18,13 @@ two-vector ALF and log-sum-exp LOF recurrences. A label-swap corruption must
 be rejected by the Claim 5 verifier. The suite records normalized errors
 `p/(epsilon log(1/epsilon))`, but does not reinterpret a finite sweep as a
 proof of either limit.
+
+The promoted verifier adds a separate proof-level route. It enumerates every
+ordered recurrent-state pair, computes the Appendix-D log-MGF integral, takes
+the finite minimum ξ, chooses `lambda=xi/2`, constructs alpha above every pair
+threshold, and reports `kappa=(-q_min)alpha/lambda`. A 200001-point trapezoid
+implementation independently checks adaptive quadrature. A bounded exhaustive
+search covers all declared two- and three-state assignments, while
+identical-emission and non-permutation controls must fail. The universal
+argument is in `proof_derivation.md`; the bounded search is a check, not the
+source of the universal quantifier.

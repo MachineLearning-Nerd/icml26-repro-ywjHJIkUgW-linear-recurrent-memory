@@ -1,6 +1,15 @@
 {
-  "batch": 509,
-  "maximum_absolute_update_error": 0.0,
   "passed": true,
-  "seed": 1618033
+  "quadrature": {
+    "method": "200001-point independent trapezoid integration",
+    "xi_quad": 0.026480946096894026,
+    "xi_dense": 0.02648094609687444,
+    "absolute_difference": 1.9585028043778152e-14
+  },
+  "matrix_index_action_checker": {
+    "seed": 1618033,
+    "batch": 509,
+    "maximum_absolute_update_error": 0.0,
+    "passed": true
+  }
 }

@@ -117,6 +117,12 @@ def released_protocol_audit(repo_root: Path) -> dict[str, object]:
         ),
         "adjacent_s5_code": "https://github.com/luchris429/s5rl",
         "adjacent_code_is_direct_paper_code": False,
+        "declared_ppo_lineage_code": "https://github.com/luchris429/popjaxrl",
+        "declared_ppo_lineage_files": [
+            "algorithms/ppo_s5.py",
+            "algorithms/s5.py",
+        ],
+        "declared_ppo_lineage_contains_ringworld_or_deep_alf": False,
         "missing_protocol_fields": omissions,
         "required_autodiff_modules_available": available_modules,
         "all_required_autodiff_modules_available": all(available_modules.values()),

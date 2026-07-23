@@ -11,7 +11,7 @@
     "icml2026-repro",
     "paper-ywjHJIkUgW"
   ],
-  "updated_at": "2026-07-23T08:00:00+00:00",
+  "updated_at": "2026-07-23T08:50:50+00:00",
   "root": {
     "slug": "index",
     "title": "Repro - Why Linear Recurrent Memory Works in PORL",
@@ -86,5 +86,5 @@
     ]
   },
   "agent_view_tokens": 2438,
-  "revision": "2026072308000000000"
+  "revision": "2026072308505000000"
 }

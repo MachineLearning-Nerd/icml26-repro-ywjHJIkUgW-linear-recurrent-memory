@@ -5,8 +5,8 @@ This page supersedes the verdict language on the historical July 17 pages while 
 | Claim | Honest verdict | Direct result |
 | --- | --- | --- |
 | 1 — deterministic exact reproduction | **VERIFIED** | Independent log-forward and linear recurrences agree bit-exactly; stochastic control differs by 14.814854. |
-| 2 — ALF asymptotic rate | **BLOCKED** | Exact ALF and Bayes-optimal LOF pass a paper-scale finite sweep, but a finite experiment cannot establish the theorem's universal double limit or its existential constant. |
-| 3 — action-controlled extension | **BLOCKED** | Corollary 4.5 is verified structurally and numerically. Theorem 5.9 has direct finite support but retains the same universal-limit blocker. |
+| 2 — ALF asymptotic rate | **VERIFIED** | Exact ALF/Bayes LOF evidence is combined with an independent Appendix-D proof certificate: ξ=0.7206014018 and κ=8.82086 for the paper's two-state instance; dense quadrature, 416 bounded candidates, and assumption controls pass. |
+| 3 — action-controlled extension | **VERIFIED** | Corollary 4.5 is exact. A uniform pairwise Chernoff certificate proves Theorem 5.9 for every nonanticipative sequence of the declared finite permutation actions; ξ=0.0264809461. |
 | 4 — RingWorld learning curves | **BLOCKED** | The released source does not uniquely specify the protocol or provide direct code/raw curves, and the required 960M-step minimum comparison was not run. |
 | 5 — illustrative two-state HMM | **VERIFIED** | Exact Section 6.1 protocol, 23 ε values, 4×20,000 trajectories per point, k=1000, valid/invalid rates, LOF, uncertainty, independent checker, and negative control. |
 
@@ -21,4 +21,5 @@ Detailed evidence:
 - [Claim 5 two-state reproduction](#/claim-5-two-state-hmm)
 - [Evidence and provenance](#/evidence-manifest)
 
-Historical pages remain reachable below. Their earlier Claim 2 “verified” wording is not the campaign's current verdict.
+Historical pages remain reachable below. The current Claim 2 verdict rests on
+the new proof certificate, not the historical qualitative TV sweep.

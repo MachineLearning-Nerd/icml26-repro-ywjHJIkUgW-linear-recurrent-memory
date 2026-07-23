@@ -25,3 +25,8 @@ sufficiently large to make a proof term negative. The paper does not identify
 a unique minimal alpha for a finite numerical bound. Section 6.1 itself calls
 `p_1000` an empirical proxy for the long-run limsup. These restrictions are
 part of the contract, not hidden limitations.
+
+The proof-level audit additionally anchors Appendix-D equation `A4.E232`
+(κ), the rate split in `A4.E229`–`A4.E231`, and the ξ construction preceding
+it. The source evaluates ξ for the two-state model as approximately `0.7206`;
+the independent certificate obtains `0.7206014018371381`.

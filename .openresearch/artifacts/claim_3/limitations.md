@@ -1,8 +1,8 @@
 # Claim 3 limitations and deviations
 
-The exact permutation corollary has a structural proof certificate and is not
-limited to the sampled trajectories. The near-permutation portion is a finite
-declared family and randomized action policy. It does not quantify over every
-admissible action sequence, every model satisfying Assumption 5.8, time to
-infinity, or epsilon to zero. Therefore it supports but does not prove Theorem
-5.9, and the combined campaign claim remains `BLOCKED`.
+The proof uses the paper's finite state/action spaces, positive distinct
+emissions, permutation backbones, and nonanticipative actions. It does not
+extend to identical emissions, non-permutation transitions, continuous
+unbounded action families, or policies depending on future observations.
+Numeric constants are instance-specific. This is an independent executable
+proof audit, not a proof-assistant formalization.

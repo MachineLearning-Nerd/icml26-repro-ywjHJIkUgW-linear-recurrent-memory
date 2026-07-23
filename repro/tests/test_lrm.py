@@ -143,7 +143,8 @@ def test_release_candidate_is_fail_closed():
     result = validate_release_candidate(repo_root)
     assert result["candidate_logbook_valid"]
     assert result["historical_files_hash_identical"]
-    assert result["claim_checks"]["claim_2"]["expected_verdict"] == "BLOCKED"
+    assert result["claim_checks"]["claim_2"]["expected_verdict"] == "VERIFIED"
+    assert result["claim_checks"]["claim_3"]["expected_verdict"] == "VERIFIED"
 
 
 def test_exact_two_state_chernoff_certificate():

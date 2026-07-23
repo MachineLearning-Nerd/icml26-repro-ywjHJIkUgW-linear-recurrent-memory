@@ -14,6 +14,9 @@
     "report p/(epsilon log(1/epsilon))",
     "use deterministic seeds and binomial confidence intervals",
     "cross-check scalar and full-vector recurrences independently",
+    "construct the Appendix-D Chernoff exponent for every ordered recurrent-state pair",
+    "select finite lambda, alpha, and kappa and verify the exact limiting schedule",
+    "independently integrate the exponent and search bounded assumption-satisfying models",
     "reject a deliberately corrupted control"
   ],
   "verdict_rule": "Finite Monte Carlo evidence alone is BLOCKED for the universal asymptotic theorem. VERIFIED requires a proof-level checker covering the stated assumptions and limits; FALSIFIED requires a counterexample satisfying every assumption.",

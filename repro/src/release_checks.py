@@ -56,11 +56,13 @@ REQUIRED_CLAIM_FILES = {
 
 EXPECTED_VERDICTS = {
     "claim_1": "VERIFIED",
-    "claim_2": "BLOCKED",
-    "claim_3": "BLOCKED",
+    "claim_2": "VERIFIED",
+    "claim_3": "VERIFIED",
     "claim_4": "BLOCKED",
     "claim_5": "VERIFIED",
 }
+
+PROOF_CLAIMS = {"claim_2", "claim_3"}
 
 
 def _sha256(path: Path) -> str:
@@ -105,6 +107,16 @@ def validate_release_candidate(repo_root: Path) -> dict:
         )
         if missing:
             raise AssertionError(f"{claim} missing release evidence: {missing}")
+        if claim in PROOF_CLAIMS:
+            proof_missing = sorted(
+                filename
+                for filename in ("proof_derivation.md", "theorem_certificate.json")
+                if not (directory / filename).is_file()
+            )
+            if proof_missing:
+                raise AssertionError(
+                    f"{claim} missing theorem evidence: {proof_missing}"
+                )
         eval_text = (directory / "EVAL.md").read_text()
         if f"**{verdict}**" not in eval_text:
             raise AssertionError(f"{claim} does not declare {verdict}")

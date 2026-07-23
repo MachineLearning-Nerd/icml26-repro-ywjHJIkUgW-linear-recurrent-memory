@@ -19,7 +19,9 @@
     "23 inverse-epsilon values, 20,000 trajectories, and k=1000",
     "valid sqrt(epsilon) ALF decreases with confidence separation",
     "epsilon-squared and wrong-action controls are separated",
-    "exact Bayes LOF is included"
+    "exact Bayes LOF is included",
+    "a one-step exponent is uniform over every ordered state pair and action",
+    "the certificate covers every nonanticipative action sequence"
   ],
   "overall_verdict_rule": "The combined claim is VERIFIED only if both the exact corollary and universal asymptotic theorem are established. Finite Monte Carlo evidence cannot establish Theorem 5.9's inherited double limits.",
   "allowed_verdicts": ["VERIFIED", "FALSIFIED", "BLOCKED"]

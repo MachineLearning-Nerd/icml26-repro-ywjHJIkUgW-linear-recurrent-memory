@@ -17,3 +17,8 @@ time-dependent nonlinear input. Theorem 5.9 assumes every action transition is
 identical emission columns. It inherits all Theorem 5.7 conclusions, including
 the limits and rate conditions; it is not merely a statement that actions may
 be concatenated to observations.
+
+The independent audit makes the abbreviated proof step explicit: every action
+permutation maps distinct hypotheses to distinct hypotheses, Assumption 5.8
+separates every recurrent emission pair, and the finite minimum one-step
+Chernoff exponent is uniform over realized nonanticipative action histories.

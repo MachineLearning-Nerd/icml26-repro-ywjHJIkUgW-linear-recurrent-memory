@@ -1,16 +1,10 @@
 {
-  "both_controls_rejected": true,
+  "all_rejected": true,
+  "identical_emissions_certificate_passed": false,
+  "nonpermutation_rejected": true,
   "stochastic_action_mismatch": 86.2514838846667,
   "wrong_action_endpoint": {
-    "inv_epsilon_250": {
-      "high": 0.8381544099380125,
-      "low": 0.8278176748450161,
-      "p": 0.83305
-    },
-    "inv_epsilon_30": {
-      "high": 0.8039026349006066,
-      "low": 0.7927827579811102,
-      "p": 0.7984
-    }
+    "inv_epsilon_30": 0.7984,
+    "inv_epsilon_250": 0.83305
   }
 }

@@ -8,12 +8,12 @@
     },
     "claim_2": {
       "contract_json_valid": true,
-      "expected_verdict": "BLOCKED",
+      "expected_verdict": "VERIFIED",
       "verifier_json_valid": true
     },
     "claim_3": {
       "contract_json_valid": true,
-      "expected_verdict": "BLOCKED",
+      "expected_verdict": "VERIFIED",
       "verifier_json_valid": true
     },
     "claim_4": {

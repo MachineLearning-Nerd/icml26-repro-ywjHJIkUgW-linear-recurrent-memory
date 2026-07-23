@@ -29,3 +29,10 @@ repository search returned zero repositories; searches for `"RingWorld"
 "Deep ALF"` returned zero code results. The cited
 `https://github.com/luchris429/s5rl` implements the earlier S5/PPO work, not
 this paper's RingWorld or Deep ALF.
+
+The paper explicitly says its PPO implementation follows Lu et al. (2023).
+The official public implementation for that work is
+`https://github.com/luchris429/popjaxrl`; its relevant lineage files are
+`algorithms/ppo_s5.py` and `algorithms/s5.py`. They provide a concrete S5/PPO
+base but contain neither RingWorld nor Deep ALF, so they do not resolve the
+missing environment, seed, or raw-curve fields.

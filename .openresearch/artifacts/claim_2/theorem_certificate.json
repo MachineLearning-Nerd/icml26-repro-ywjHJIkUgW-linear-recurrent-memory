@@ -1,0 +1,612 @@
+{
+  "bounded_counterexample_search": {
+    "assumption_satisfying_models": 312,
+    "counterexample": null,
+    "counterexample_found": false,
+    "minimum_positive_xi": 0.023296954842583352,
+    "models_searched": 416,
+    "passed": true
+  },
+  "claim2_certificate_verdict": "VERIFIED",
+  "claim2_independent_checker": {
+    "absolute_difference": 6.119549311733863e-13,
+    "method": "200001-point independent trapezoid integration",
+    "passed": true,
+    "xi_dense": 0.7206014018365261,
+    "xi_quad": 0.7206014018371381
+  },
+  "claim2_theorem_5_7_certificate": {
+    "W": 2.3025850929940455,
+    "alpha": 3.178161217675534,
+    "conditions": {
+      "alpha_exceeds_every_pair_threshold": true,
+      "delta_limit_zero": true,
+      "epsilon_over_delta_limit_zero": true,
+      "kappa_finite_positive": true,
+      "lambda_strictly_between_zero_and_xi": true,
+      "permutation_backbone": true,
+      "positive_emissions": true,
+      "stacked_trajectory_observability": true,
+      "xi_positive": true
+    },
+    "kappa": 8.820857715716253,
+    "lambda": 0.36030070091856903,
+    "maximum_quadrature_error": 8.000282678967552e-15,
+    "observations": 2,
+    "pair_certificates": [
+      {
+        "alpha_threshold": 2.178161217675534,
+        "alternative_state": 1,
+        "differing_steps_per_period": 2,
+        "integral_sum": -1.4412028036742761,
+        "kl_sum_per_period": 3.5155593237379517,
+        "true_state": 0,
+        "xi_pair": 0.7206014018371381
+      },
+      {
+        "alpha_threshold": 2.178161217675534,
+        "alternative_state": 0,
+        "differing_steps_per_period": 2,
+        "integral_sum": -1.4412028036742761,
+        "kl_sum_per_period": 3.5155593237379517,
+        "true_state": 1,
+        "xi_pair": 0.7206014018371381
+      }
+    ],
+    "passed": true,
+    "permutation_order": 2,
+    "proof_route": "independent executable instantiation of Appendix D.1",
+    "q_rate": 1.0,
+    "states": 2,
+    "xi": 0.7206014018371381
+  },
+  "claim3_independent_checker": {
+    "absolute_difference": 1.9585028043778152e-14,
+    "method": "200001-point independent trapezoid integration",
+    "passed": true,
+    "xi_dense": 0.02648094609687444,
+    "xi_quad": 0.026480946096894026
+  },
+  "claim3_theorem_5_9_certificate": {
+    "W": 10.657738969355666,
+    "actions": 4,
+    "all_actions_preserve_pair_separation": true,
+    "alpha": 8.386322534180538,
+    "conditions": {
+      "all_actions_preserve_pair_separation": true,
+      "alpha_exceeds_every_pair_threshold": true,
+      "delta_limit_zero": true,
+      "epsilon_over_delta_limit_zero": true,
+      "kappa_finite_positive": true,
+      "lambda_strictly_between_zero_and_xi": true,
+      "permutation_backbone": true,
+      "positive_emissions": true,
+      "stacked_trajectory_observability": true,
+      "xi_positive": true
+    },
+    "kappa": 554.2122392876782,
+    "lambda": 0.013240473048447013,
+    "maximum_quadrature_error": 2.0318549013524747e-14,
+    "observations": 5,
+    "pair_certificates": [
+      {
+        "alpha_threshold": 4.134682179687236,
+        "alternative_state": 1,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.7276020616081259,
+        "kl_sum_per_period": 1.4110755989716433,
+        "true_state": 0,
+        "xi_pair": 0.7276020616081259
+      },
+      {
+        "alpha_threshold": 4.127652013072618,
+        "alternative_state": 2,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.7403611304327371,
+        "kl_sum_per_period": 1.647600361811347,
+        "true_state": 0,
+        "xi_pair": 0.7403611304327371
+      },
+      {
+        "alpha_threshold": 4.244166990508428,
+        "alternative_state": 3,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.6522813324873543,
+        "kl_sum_per_period": 1.4157689157192341,
+        "true_state": 0,
+        "xi_pair": 0.6522813324873543
+      },
+      {
+        "alpha_threshold": 4.0771748897348825,
+        "alternative_state": 4,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.8332222737223622,
+        "kl_sum_per_period": 3.255669149160521,
+        "true_state": 0,
+        "xi_pair": 0.8332222737223622
+      },
+      {
+        "alpha_threshold": 4.955234701919784,
+        "alternative_state": 5,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.31014161519547395,
+        "kl_sum_per_period": 0.6915368981654082,
+        "true_state": 0,
+        "xi_pair": 0.31014161519547395
+      },
+      {
+        "alpha_threshold": 6.186356288419109,
+        "alternative_state": 6,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.08839454334556995,
+        "kl_sum_per_period": 0.16756814371497586,
+        "true_state": 0,
+        "xi_pair": 0.08839454334556995
+      },
+      {
+        "alpha_threshold": 3.907949939583077,
+        "alternative_state": 7,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.9294757869194685,
+        "kl_sum_per_period": 1.8269638192884305,
+        "true_state": 0,
+        "xi_pair": 0.9294757869194685
+      },
+      {
+        "alpha_threshold": 4.143539269680279,
+        "alternative_state": 0,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.7197876111560928,
+        "kl_sum_per_period": 1.3670060035527447,
+        "true_state": 1,
+        "xi_pair": 0.7197876111560928
+      },
+      {
+        "alpha_threshold": 5.32812266736858,
+        "alternative_state": 2,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.2112538669264534,
+        "kl_sum_per_period": 0.44903461496202457,
+        "true_state": 1,
+        "xi_pair": 0.2112538669264534
+      },
+      {
+        "alpha_threshold": 7.386322534180538,
+        "alternative_state": 3,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.026480946096894026,
+        "kl_sum_per_period": 0.05147629413870673,
+        "true_state": 1,
+        "xi_pair": 0.026480946096894026
+      },
+      {
+        "alpha_threshold": 4.742309387189528,
+        "alternative_state": 4,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.38633605946496224,
+        "kl_sum_per_period": 0.840659396718919,
+        "true_state": 1,
+        "xi_pair": 0.38633605946496224
+      },
+      {
+        "alpha_threshold": 4.77119837581616,
+        "alternative_state": 5,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.37182981892236555,
+        "kl_sum_per_period": 0.6337549295874435,
+        "true_state": 1,
+        "xi_pair": 0.37182981892236555
+      },
+      {
+        "alpha_threshold": 4.835057922906915,
+        "alternative_state": 6,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.34984546890436796,
+        "kl_sum_per_period": 0.6978261730612068,
+        "true_state": 1,
+        "xi_pair": 0.34984546890436796
+      },
+      {
+        "alpha_threshold": 4.406926318069257,
+        "alternative_state": 7,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.5540014548621549,
+        "kl_sum_per_period": 1.4032856162574554,
+        "true_state": 1,
+        "xi_pair": 0.5540014548621549
+      },
+      {
+        "alpha_threshold": 4.22653297576557,
+        "alternative_state": 0,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.6565700431578725,
+        "kl_sum_per_period": 1.1652834950784952,
+        "true_state": 2,
+        "xi_pair": 0.6565700431578725
+      },
+      {
+        "alpha_threshold": 5.3711589323427384,
+        "alternative_state": 1,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.2018381145384665,
+        "kl_sum_per_period": 0.39342468830838034,
+        "true_state": 2,
+        "xi_pair": 0.2018381145384665
+      },
+      {
+        "alpha_threshold": 5.078356217147188,
+        "alternative_state": 3,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.2723312709745346,
+        "kl_sum_per_period": 0.5404675843808732,
+        "true_state": 2,
+        "xi_pair": 0.2723312709745346
+      },
+      {
+        "alpha_threshold": 4.098201256879667,
+        "alternative_state": 4,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.7692070981964925,
+        "kl_sum_per_period": 1.8499047540854205,
+        "true_state": 2,
+        "xi_pair": 0.7692070981964925
+      },
+      {
+        "alpha_threshold": 5.31652043502204,
+        "alternative_state": 5,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.21344940797405906,
+        "kl_sum_per_period": 0.4215641742579036,
+        "true_state": 2,
+        "xi_pair": 0.21344940797405906
+      },
+      {
+        "alpha_threshold": 4.788303488391501,
+        "alternative_state": 6,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.3658787970913634,
+        "kl_sum_per_period": 0.6550771518215281,
+        "true_state": 2,
+        "xi_pair": 0.3658787970913634
+      },
+      {
+        "alpha_threshold": 3.592781705934289,
+        "alternative_state": 7,
+        "differing_steps_per_period": 1,
+        "integral_sum": -1.319768245565655,
+        "kl_sum_per_period": 2.661417461790338,
+        "true_state": 2,
+        "xi_pair": 1.319768245565655
+      },
+      {
+        "alpha_threshold": 4.314506592696488,
+        "alternative_state": 0,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.5997480433247206,
+        "kl_sum_per_period": 1.108117502825708,
+        "true_state": 3,
+        "xi_pair": 0.5997480433247206
+      },
+      {
+        "alpha_threshold": 7.3577979443281105,
+        "alternative_state": 1,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.02725307372591761,
+        "kl_sum_per_period": 0.05609767571411798,
+        "true_state": 3,
+        "xi_pair": 0.02725307372591761
+      },
+      {
+        "alpha_threshold": 5.019701142323202,
+        "alternative_state": 2,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.2901930740462672,
+        "kl_sum_per_period": 0.6472132082043859,
+        "true_state": 3,
+        "xi_pair": 0.2901930740462672
+      },
+      {
+        "alpha_threshold": 5.384036683479222,
+        "alternative_state": 4,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.19971923656106125,
+        "kl_sum_per_period": 0.4439424920216449,
+        "true_state": 3,
+        "xi_pair": 0.19971923656106125
+      },
+      {
+        "alpha_threshold": 4.5931037237113586,
+        "alternative_state": 5,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.4462817509671514,
+        "kl_sum_per_period": 0.7309754599653975,
+        "true_state": 3,
+        "xi_pair": 0.4462817509671514
+      },
+      {
+        "alpha_threshold": 4.998997839339541,
+        "alternative_state": 6,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.29518277706162227,
+        "kl_sum_per_period": 0.5670854530156901,
+        "true_state": 3,
+        "xi_pair": 0.29518277706162227
+      },
+      {
+        "alpha_threshold": 4.351320203169974,
+        "alternative_state": 7,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.5872679845940071,
+        "kl_sum_per_period": 1.464887313857469,
+        "true_state": 3,
+        "xi_pair": 0.5872679845940071
+      },
+      {
+        "alpha_threshold": 4.562218313716395,
+        "alternative_state": 0,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.4574160997704707,
+        "kl_sum_per_period": 0.593781077288928,
+        "true_state": 4,
+        "xi_pair": 0.4574160997704707
+      },
+      {
+        "alpha_threshold": 4.798133483951922,
+        "alternative_state": 1,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.36285735760102583,
+        "kl_sum_per_period": 0.6888867182855162,
+        "true_state": 4,
+        "xi_pair": 0.36285735760102583
+      },
+      {
+        "alpha_threshold": 4.047633571864607,
+        "alternative_state": 2,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.8106618122155421,
+        "kl_sum_per_period": 1.894495560479459,
+        "true_state": 4,
+        "xi_pair": 0.8106618122155421
+      },
+      {
+        "alpha_threshold": 5.46844296393267,
+        "alternative_state": 3,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.18265849698570208,
+        "kl_sum_per_period": 0.337841752034175,
+        "true_state": 4,
+        "xi_pair": 0.18265849698570208
+      },
+      {
+        "alpha_threshold": 3.95752039097262,
+        "alternative_state": 5,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.8661782170837862,
+        "kl_sum_per_period": 1.3469548928823591,
+        "true_state": 4,
+        "xi_pair": 0.8661782170837862
+      },
+      {
+        "alpha_threshold": 4.8901331853667465,
+        "alternative_state": 6,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.32740088821556745,
+        "kl_sum_per_period": 0.4519800930311252,
+        "true_state": 4,
+        "xi_pair": 0.32740088821556745
+      },
+      {
+        "alpha_threshold": 3.9720886420471446,
+        "alternative_state": 7,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.8658192879763411,
+        "kl_sum_per_period": 1.6699947674206554,
+        "true_state": 4,
+        "xi_pair": 0.8658192879763411
+      },
+      {
+        "alpha_threshold": 5.069630964981583,
+        "alternative_state": 0,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.27396765687773983,
+        "kl_sum_per_period": 0.48078574102215565,
+        "true_state": 5,
+        "xi_pair": 0.27396765687773983
+      },
+      {
+        "alpha_threshold": 4.628595403423255,
+        "alternative_state": 1,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.4361500926304473,
+        "kl_sum_per_period": 1.0089025596154868,
+        "true_state": 5,
+        "xi_pair": 0.4361500926304473
+      },
+      {
+        "alpha_threshold": 5.3164813718028565,
+        "alternative_state": 2,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.21345793901201673,
+        "kl_sum_per_period": 0.4215838131681613,
+        "true_state": 5,
+        "xi_pair": 0.21345793901201673
+      },
+      {
+        "alpha_threshold": 4.411308879252866,
+        "alternative_state": 3,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.5500485491689627,
+        "kl_sum_per_period": 1.3402558038004881,
+        "true_state": 5,
+        "xi_pair": 0.5500485491689627
+      },
+      {
+        "alpha_threshold": 3.6879980249332998,
+        "alternative_state": 4,
+        "differing_steps_per_period": 1,
+        "integral_sum": -1.2705834176920274,
+        "kl_sum_per_period": 4.07380169759748,
+        "true_state": 5,
+        "xi_pair": 1.2705834176920274
+      },
+      {
+        "alpha_threshold": 5.780023913831856,
+        "alternative_state": 6,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.13310333599561075,
+        "kl_sum_per_period": 0.2317514838355781,
+        "true_state": 5,
+        "xi_pair": 0.13310333599561075
+      },
+      {
+        "alpha_threshold": 3.8285743566360892,
+        "alternative_state": 7,
+        "differing_steps_per_period": 1,
+        "integral_sum": -1.0314162658393033,
+        "kl_sum_per_period": 2.4055058710185877,
+        "true_state": 5,
+        "xi_pair": 1.0314162658393033
+      },
+      {
+        "alpha_threshold": 6.141876858545645,
+        "alternative_state": 0,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.09252031949032329,
+        "kl_sum_per_period": 0.19204309671525355,
+        "true_state": 6,
+        "xi_pair": 0.09252031949032329
+      },
+      {
+        "alpha_threshold": 4.840196479129309,
+        "alternative_state": 1,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.3478960724993984,
+        "kl_sum_per_period": 0.6879402282752158,
+        "true_state": 6,
+        "xi_pair": 0.3478960724993984
+      },
+      {
+        "alpha_threshold": 4.66809754604006,
+        "alternative_state": 2,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.4185358344401255,
+        "kl_sum_per_period": 0.9704979932972316,
+        "true_state": 6,
+        "xi_pair": 0.4185358344401255
+      },
+      {
+        "alpha_threshold": 4.937083733412759,
+        "alternative_state": 3,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.315866021487153,
+        "kl_sum_per_period": 0.694577512858954,
+        "true_state": 6,
+        "xi_pair": 0.315866021487153
+      },
+      {
+        "alpha_threshold": 4.450376673729503,
+        "alternative_state": 4,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.5443358417316493,
+        "kl_sum_per_period": 1.9982093803114451,
+        "true_state": 6,
+        "xi_pair": 0.5443358417316493
+      },
+      {
+        "alpha_threshold": 5.650945277486439,
+        "alternative_state": 5,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.1522413010932157,
+        "kl_sum_per_period": 0.3454392875412915,
+        "true_state": 6,
+        "xi_pair": 0.1522413010932157
+      },
+      {
+        "alpha_threshold": 4.045294960905548,
+        "alternative_state": 7,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.8154656313049914,
+        "kl_sum_per_period": 1.977496251836906,
+        "true_state": 6,
+        "xi_pair": 0.8154656313049914
+      },
+      {
+        "alpha_threshold": 3.9199572574249606,
+        "alternative_state": 0,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.9147556127627746,
+        "kl_sum_per_period": 1.73558165182561,
+        "true_state": 7,
+        "xi_pair": 0.9147556127627746
+      },
+      {
+        "alpha_threshold": 4.614423121878239,
+        "alternative_state": 1,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.4361739617088403,
+        "kl_sum_per_period": 0.6959511138540291,
+        "true_state": 7,
+        "xi_pair": 0.4361739617088403
+      },
+      {
+        "alpha_threshold": 3.6259729184576948,
+        "alternative_state": 2,
+        "differing_steps_per_period": 1,
+        "integral_sum": -1.2561472794738526,
+        "kl_sum_per_period": 2.2757526982268996,
+        "true_state": 7,
+        "xi_pair": 1.2561472794738526
+      },
+      {
+        "alpha_threshold": 4.534075358903241,
+        "alternative_state": 3,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.47459461804321035,
+        "kl_sum_per_period": 0.7857662111671032,
+        "true_state": 7,
+        "xi_pair": 0.47459461804321035
+      },
+      {
+        "alpha_threshold": 3.893207833786201,
+        "alternative_state": 4,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.9564980418490209,
+        "kl_sum_per_period": 2.151262446775799,
+        "true_state": 7,
+        "xi_pair": 0.9564980418490209
+      },
+      {
+        "alpha_threshold": 4.012067223832674,
+        "alternative_state": 5,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.8160186857210071,
+        "kl_sum_per_period": 1.2315220332411745,
+        "true_state": 7,
+        "xi_pair": 0.8160186857210071
+      },
+      {
+        "alpha_threshold": 4.227037893742744,
+        "alternative_state": 6,
+        "differing_steps_per_period": 1,
+        "integral_sum": -0.652562682254549,
+        "kl_sum_per_period": 1.0393571681881297,
+        "true_state": 7,
+        "xi_pair": 0.652562682254549
+      }
+    ],
+    "passed": true,
+    "permutation_order": 1,
+    "proof_route": "uniform one-step Chernoff certificate; permutations preserve distinct hypotheses and positive pairwise emission information under every nonanticipative action sequence",
+    "q_rate": 0.875,
+    "states": 8,
+    "xi": 0.026480946096894026
+  },
+  "claim3_theorem_certificate_verdict": "VERIFIED",
+  "negative_controls": {
+    "identical_emissions_certificate_passed": false,
+    "identical_emissions_xi": -0.0,
+    "nonpermutation_rejected": true,
+    "passed": true
+  },
+  "scope": "A constructive independent proof certificate: positivity of the paper's Chernoff exponent is checked from the exact finite emission models; the action certificate is uniform over every nonanticipative sequence of the declared permutation actions."
+}

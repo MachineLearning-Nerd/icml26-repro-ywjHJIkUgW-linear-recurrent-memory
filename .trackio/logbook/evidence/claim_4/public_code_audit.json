@@ -17,5 +17,11 @@
   ],
   "author_publication_page_has_code_link_for_this_paper": false,
   "adjacent_s5_repository": "https://github.com/luchris429/s5rl",
-  "adjacent_repository_contains_this_papers_ringworld_or_deep_alf": false
+  "adjacent_repository_contains_this_papers_ringworld_or_deep_alf": false,
+  "declared_ppo_lineage_repository": "https://github.com/luchris429/popjaxrl",
+  "declared_ppo_lineage_files": [
+    "algorithms/ppo_s5.py",
+    "algorithms/s5.py"
+  ],
+  "declared_ppo_lineage_contains_ringworld_or_deep_alf": false
 }

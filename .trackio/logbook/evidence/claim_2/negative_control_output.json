@@ -1,10 +1,19 @@
 {
-  "control": "swap valid log-rate and invalid epsilon-squared labels",
-  "failed_checks": [
-    "alf_epsilon_squared_separated_from_valid_at_smallest_epsilon",
-    "alf_delta_one_separated_from_valid_at_smallest_epsilon",
-    "log_rate_lower_mean_error_than_sqrt_rate",
-    "log_rate_better_on_at_least_18_of_23_points"
-  ],
-  "verifier_rejected": true
+  "all_rejected": true,
+  "identical_emissions": {
+    "certificate_passed": false,
+    "xi": 0.0
+  },
+  "nonpermutation_backbone": {
+    "rejected": true
+  },
+  "empirical_label_swap": {
+    "verifier_rejected": true,
+    "failed_checks": [
+      "alf_epsilon_squared_separated_from_valid_at_smallest_epsilon",
+      "alf_delta_one_separated_from_valid_at_smallest_epsilon",
+      "log_rate_lower_mean_error_than_sqrt_rate",
+      "log_rate_better_on_at_least_18_of_23_points"
+    ]
+  }
 }

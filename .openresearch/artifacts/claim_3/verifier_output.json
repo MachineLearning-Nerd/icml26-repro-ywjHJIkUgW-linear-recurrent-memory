@@ -1,63 +1,14 @@
 {
-  "all_empirical_checks_passed": true,
-  "checks": {
-    "all_action_conditioned_decoders_present": true,
-    "all_four_actions_exercised": true,
-    "bayes_lof_no_worse_in_aggregate": true,
-    "exact_23_point_grid": true,
-    "invalid_delta_separated_at_smallest_epsilon": true,
-    "valid_alf_endpoint_drop_with_nonoverlap": true,
-    "wrong_action_control_separated_at_smallest_epsilon": true
-  },
-  "endpoint": {
-    "action_conditioned_lof_bayes": {
-      "inv_epsilon_250": {
-        "high": 0.028194042980040954,
-        "low": 0.02378804560835745,
-        "p": 0.0259
-      },
-      "inv_epsilon_30": {
-        "high": 0.17294144171463693,
-        "low": 0.16258618544825015,
-        "p": 0.1677
-      }
-    },
-    "invalid_alf_epsilon_squared": {
-      "inv_epsilon_250": {
-        "high": 0.6423427822166334,
-        "low": 0.6290050991977398,
-        "p": 0.6357
-      },
-      "inv_epsilon_30": {
-        "high": 0.7760278828728208,
-        "low": 0.7643683216388547,
-        "p": 0.77025
-      }
-    },
-    "time_varying_alf_sqrt_epsilon": {
-      "inv_epsilon_250": {
-        "high": 0.03970622852937233,
-        "low": 0.034471596858580554,
-        "p": 0.037
-      },
-      "inv_epsilon_30": {
-        "high": 0.19847772948767137,
-        "low": 0.18754019985438244,
-        "p": 0.19295
-      }
-    },
-    "wrong_action_control": {
-      "inv_epsilon_250": {
-        "high": 0.8381544099380125,
-        "low": 0.8278176748450161,
-        "p": 0.83305
-      },
-      "inv_epsilon_30": {
-        "high": 0.8039026349006066,
-        "low": 0.7927827579811102,
-        "p": 0.7984
-      }
-    }
-  },
-  "scope": "finite action-controlled instance; not universal-limit proof"
+  "verdict": "VERIFIED",
+  "source_run_id": "6f7de36c-6f06-46e7-807c-9d4ad13b8a4d",
+  "source_git_sha": "3268a52e8940d2fd488b20418cabd06a56ce337e",
+  "corollary_4_5_structural_certificate_passed": true,
+  "theorem_5_9_uniform_certificate_passed": true,
+  "finite_action_alf_and_bayes_lof_checks_passed": true,
+  "xi": 0.026480946096894026,
+  "lambda": 0.013240473048447013,
+  "alpha": 8.384928047368811,
+  "kappa": 554.2122392876782,
+  "actions": 4,
+  "all_actions_preserve_pair_separation": true
 }

@@ -16,9 +16,11 @@ evidence/claim_2/independent_checker_output.json
 evidence/claim_2/limitations.md
 evidence/claim_2/method.md
 evidence/claim_2/negative_control_output.json
+evidence/claim_2/proof_derivation.md
 evidence/claim_2/raw_two_state_sweep.csv
 evidence/claim_2/runtime.json
 evidence/claim_2/source_audit.md
+evidence/claim_2/theorem_certificate.json
 evidence/claim_2/verifier_output.json
 evidence/claim_3/EVAL.md
 evidence/claim_3/claim_contract.json
@@ -28,9 +30,11 @@ evidence/claim_3/independent_checker_output.json
 evidence/claim_3/limitations.md
 evidence/claim_3/method.md
 evidence/claim_3/negative_control_output.json
+evidence/claim_3/proof_derivation.md
 evidence/claim_3/raw_action_sweep.csv
 evidence/claim_3/runtime.json
 evidence/claim_3/source_audit.md
+evidence/claim_3/theorem_certificate.json
 evidence/claim_3/verifier_output.json
 evidence/claim_4/EVAL.md
 evidence/claim_4/claim_contract.json

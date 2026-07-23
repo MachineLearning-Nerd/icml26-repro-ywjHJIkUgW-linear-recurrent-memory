@@ -14,7 +14,19 @@ The released paper source does not uniquely specify:
 - full transition entries for all three actions;
 - numeric learning curves or checkpoints.
 
-The paper and its author publication entry provide no direct implementation link; the exact-title GitHub search returned no repository. The available S5 RL repository is adjacent baseline code, not this paper's implementation. The fixed environment also intentionally contains no unpinned JAX/Flax/Optax/Distrax/Gymnax stack.
+The paper and its author publication entry provide no direct implementation
+link; the exact-title GitHub search returned no repository. The cited PPO
+lineage is publicly available as `luchris429/popjaxrl`, including
+`algorithms/ppo_s5.py` and `algorithms/s5.py`, but it contains neither
+RingWorld nor Deep ALF. The adjacent S5 RL repository is likewise baseline
+code, not this paper's implementation. The fixed environment also
+intentionally contains no unpinned JAX/Flax/Optax/Distrax/Gymnax stack.
+
+A separate source-raster route was attempted and rejected. Exact hashed arXiv
+figures contain solid and dashed variants with the same colors; forward and
+backward path tracers could not unambiguously recover direct ALF-versus-LOF
+convergence time. Final-return separation alone is insufficient, and no
+digitized result is promoted to full training evidence.
 
 Accordingly, CPU-only training was not launched: doing so would require inventing material protocol details and could not support a faithful comparison. A deliberately incomplete 12-state/4-observation shell is included only as a negative control; the verifier rejects it because it has no PPO, S5, deep ALF, seeds, or training steps.
 

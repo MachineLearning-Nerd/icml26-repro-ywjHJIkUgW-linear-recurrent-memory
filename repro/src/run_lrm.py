@@ -141,10 +141,10 @@ def main():
     run_claim3_evidence(repo_root)
     print("Running full-scale RingWorld Claim 4 blocker audit")
     run_claim4_evidence(repo_root)
-    print("Validating cumulative logbook release candidate")
-    validate_release_candidate(repo_root)
     print("Running certified theorem and source-raster audit")
     run_certified_audit(repo_root)
+    print("Validating cumulative logbook release candidate")
+    validate_release_candidate(repo_root)
 
 
 if __name__ == "__main__":

@@ -1,9 +1,24 @@
 {
-  "max_abs_alf_logit_difference_error": 2.6645352591003757e-15,
-  "max_abs_lof_logit_difference_error": 3.108624468950438e-14,
   "passed": true,
-  "path_sha256": "939b7b1e50e00eaf0e1e4a7d9b6783fedcda2100d7938eb5088032c372540a7f",
-  "seed": 314159,
-  "steps": 73,
-  "trajectories": 257
+  "quadrature": {
+    "method": "200001-point independent trapezoid integration",
+    "xi_quad": 0.7206014018371381,
+    "xi_dense": 0.7206014018365261,
+    "absolute_difference": 6.119549311733863e-13
+  },
+  "scalar_vector_empirical_checker": {
+    "seed": 314159,
+    "steps": 73,
+    "trajectories": 257,
+    "max_abs_alf_logit_difference_error": 2.6645352591003757e-15,
+    "max_abs_lof_logit_difference_error": 3.108624468950438e-14,
+    "passed": true
+  },
+  "bounded_search": {
+    "models_searched": 416,
+    "assumption_satisfying_models": 312,
+    "minimum_positive_xi": 0.023296954842583352,
+    "counterexample_found": false,
+    "passed": true
+  }
 }

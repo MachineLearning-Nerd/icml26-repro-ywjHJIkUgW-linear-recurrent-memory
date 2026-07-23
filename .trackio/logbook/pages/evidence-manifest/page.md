@@ -14,6 +14,11 @@ The live verdict was selected only after filtering the verdict dataset by `space
 
 All experiment nodes inherit one UV/CPython 3.12.11 CPU command. Dependencies are exactly pinned; variants are committed code, never environment-variable switches or alternate commands. Deterministic seeds, runtime/CPU metadata, raw CSV/JSON, claim contracts, source audits, methods, limitations, independent checker outputs, negative controls, and `EVAL.md` are included per claim.
 
+Claims 2 and 3 additionally include `proof_derivation.md` and
+`theorem_certificate.json`. Their successful source run is
+`6f7de36c-6f06-46e7-807c-9d4ad13b8a4d` at Git SHA
+`3268a52e8940d2fd488b20418cabd06a56ce337e`.
+
 The release allowlist and SHA-256 manifest contain text files only. Existing judged pages and assets remain reachable; publication has not occurred at the time this page was prepared.
 
 Evidence directories:

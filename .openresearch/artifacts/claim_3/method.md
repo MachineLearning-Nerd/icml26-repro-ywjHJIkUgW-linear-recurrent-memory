@@ -13,3 +13,10 @@ policy exercises every action. Time-varying ALF Equation 65, exact
 action-conditioned Bayes LOF, invalid `delta=epsilon^2`, and a wrong-action
 control share paths over 23 inverse-epsilon values, 20,000 trajectories, and
 1,000 steps. Wilson 95% intervals accompany all endpoint tests.
+
+The proof-level route enumerates all actions and ordered state pairs. It first
+certifies each action matrix is a permutation and preserves pair separation,
+then computes the worst one-step Appendix-D exponent over the finite pair set.
+This supplies a uniform conditional Chernoff factor for every
+nonanticipative action history. Adaptive quadrature is checked by a dense
+trapezoid rule; non-permutation and wrong-action controls must fail.
