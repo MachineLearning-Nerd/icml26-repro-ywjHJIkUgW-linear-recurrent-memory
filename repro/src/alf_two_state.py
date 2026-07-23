@@ -28,7 +28,7 @@ RETRIEVED_UTC = "2026-07-23T06:09:31Z"
 TRAJECTORIES = 20_000
 STEPS = 1_000
 CHECKPOINTS = (900, 950, 1_000)
-REPLICATE_SEEDS = (20260723,)
+REPLICATE_SEEDS = (20260723, 20260724, 20260725, 20260726)
 INV_EPSILON_GRID = np.linspace(30.0, 250.0, 23)
 LOG_LIKELIHOOD_RATIO = math.log(9.0)
 FILTER_NAMES = (
@@ -489,4 +489,3 @@ def run_claim2_5_evidence(repo_root: Path) -> dict[str, object]:
     }
     print("ORX_EVIDENCE_C2_C5=" + json.dumps(summary, sort_keys=True))
     return summary
-

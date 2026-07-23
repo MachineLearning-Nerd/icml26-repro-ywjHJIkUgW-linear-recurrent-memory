@@ -9,4 +9,6 @@ and LOF is evaluated as the exact two-state Bayes filter.
 Raw rows include seed, epsilon, inverse epsilon, filter, adaptation rate,
 checkpoint, error count, trajectory count, Wilson interval, and normalized
 error. Checkpoints 900, 950, and 1000 expose stabilization; the predeclared
-verdict uses the paper's `p_1000`.
+verdict uses the paper's `p_1000`. Four prespecified independent replicate
+seeds provide 80,000 total trajectories per epsilon while preserving 20,000
+trajectories in each paper-scale replicate.

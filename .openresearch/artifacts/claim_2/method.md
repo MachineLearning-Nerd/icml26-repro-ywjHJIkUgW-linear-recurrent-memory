@@ -8,6 +8,8 @@ The executable suite uses Eq. (66):
 It initializes `pi_0=[1,0]^T` and both ALF and LOF logits to `[0,0]^T`,
 then runs the paper's 23 uniformly spaced inverse-epsilon values from 30 to
 250 for 1,000 steps and 20,000 common-random-number trajectories per value.
+Four prespecified independent replicate seeds retain the paper's 20,000-path
+unit while tightening aggregate uncertainty to 80,000 paths per value.
 The primary ALF schedule is `0.7/log(1/epsilon)`. Exact LOF supplies the
 Bayes-optimal MAP comparator. Wilson 95% intervals accompany every estimate.
 
